@@ -11,5 +11,12 @@
 
 [clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
 
+```shell
+selector=$1
+name=$2
+selector=`echo -n "$selector"| xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
+```
+
 ## network
 [http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
