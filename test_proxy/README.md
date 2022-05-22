@@ -52,3 +52,6 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 #### 碰到的一些报错
 - wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
 - curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
+- curl报错 `curl: (35) Encountered end of file` 
+  - 查看443端口状态`firewall-cmd --zone=public --query-port=443/tcp`, yes表示开启,若未开启执行`irewall-cmd --zone=public --add-port=443/tcp`开启
+  - 若已开启, 仍有报错，可能网络问题，多试几次;
