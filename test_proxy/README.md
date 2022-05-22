@@ -31,12 +31,6 @@ wget https://clash_url -O ~/.config/clash/config.yaml
   - Port: 通常为9090，具体见 `~/.config/clash/config.yaml`中的`external-controller`
   - Secret: 可配置，无则不填，具体见`~/.config/clash/config.yaml`中的`secret` 
 
-[centos使用clash](https://i.jakeyu.top/2021/11/27/centos-%E4%BD%BF%E7%94%A8-Clash-%E6%A2%AF%E5%AD%90/)
-
-[clash_premium](https://github.com/Dreamacro/clash/releases/tag/premium)
-
-[clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
-
 - 根据api本地修改配置 [clash_restful_api](https://clash.gitbook.io/)
 ```shell
 ## 仅参考
@@ -45,6 +39,13 @@ name=$2
 selector=`echo -n "$selector"| xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
 curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 ```
+
+[centos使用clash](https://i.jakeyu.top/2021/11/27/centos-%E4%BD%BF%E7%94%A8-Clash-%E6%A2%AF%E5%AD%90/)
+
+[clash_premium](https://github.com/Dreamacro/clash/releases/tag/premium)
+
+[clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
+
 
 ## network
 [http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
