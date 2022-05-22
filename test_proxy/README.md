@@ -26,6 +26,8 @@ cd ~
 wget https://clash_url -O ~/.config/clash/config.yaml
 # 后台运行
 ./clash &
+export http_proxy=127.0.0.1:7890
+export http_proxys=127.0.0.1:7890
 ```
 - 登录[远程管理界面](http://clash.razord.top/)修改配置
   - Host: ip地址
