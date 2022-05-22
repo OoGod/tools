@@ -48,6 +48,6 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 
 ## network
 [http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
-- 碰到的一些报错
-  - wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
-  - curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
+#### 碰到的一些报错
+- wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
+- curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
