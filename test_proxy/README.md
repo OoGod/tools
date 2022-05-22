@@ -1,10 +1,9 @@
 ## ssr
-[TyrantLucifer/ssr-command-client](https://github.com/TyrantLucifer/ssr-command-client)
+* [TyrantLucifer/ssr-command-client](https://github.com/TyrantLucifer/ssr-command-client)
 
 ## v2ray
-[v2fly/fhs-install-v2ray](https://github.com/v2fly/fhs-install-v2ray)
-
-[ToutyRater/v2ray-guide](https://github.com/ToutyRater/v2ray-guide)
+* [v2fly/fhs-install-v2ray](https://github.com/v2fly/fhs-install-v2ray)
+* [ToutyRater/v2ray-guide](https://github.com/ToutyRater/v2ray-guide)
 
 ## clash
 
@@ -41,15 +40,13 @@ selector=`echo -n "$selector"| xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
 curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 ```
 
-[centos使用clash](https://i.jakeyu.top/2021/11/27/centos-%E4%BD%BF%E7%94%A8-Clash-%E6%A2%AF%E5%AD%90/)
-
-[clash_premium](https://github.com/Dreamacro/clash/releases/tag/premium)
-
-[clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
+* [centos使用clash](https://i.jakeyu.top/2021/11/27/centos-%E4%BD%BF%E7%94%A8-Clash-%E6%A2%AF%E5%AD%90/)
+* [clash_premium](https://github.com/Dreamacro/clash/releases/tag/premium)
+* [clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
 
 
 ## network
-[http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
+* [http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
 #### 碰到的一些报错
 - wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
 - curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
