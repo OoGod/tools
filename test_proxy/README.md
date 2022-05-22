@@ -26,12 +26,12 @@ wget https://clash_url -O ~/.config/clash/config.yaml
 # 后台运行
 ./clash &
 ```
-- 登录[远程管理界面](http://clash.razord.top/)修改配置 [clash_restful_api](https://clash.gitbook.io/)
+- 登录[远程管理界面](http://clash.razord.top/)修改配置
   - Host: ip地址
   - Port: 通常为9090，具体见 `~/.config/clash/config.yaml`中的`external-controller`
   - Secret: 可配置，无则不填，具体见`~/.config/clash/config.yaml`中的`secret` 
 
-- 根据api本地修改配置 [clash_restful_api](https://clash.gitbook.io/)
+- (非必要,仅参考)根据api本地修改配置 [clash_restful_api](https://clash.gitbook.io/)
 ```shell
 ## 仅参考
 selector=$1
