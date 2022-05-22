@@ -30,10 +30,6 @@ wget https://clash_url -O ~/.config/clash/config.yaml
   - Host: ip地址
   - Port: 通常为9090，具体见 `~/.config/clash/config.yaml`中的`external-controller`
   - Secret: 可配置，无则不填，具体见`~/.config/clash/config.yaml`中的`secret` 
-- 碰到的一些报错
-
-  - wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
-  - curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
 - (非必要,仅参考)根据api本地修改配置 [clash_restful_api](https://clash.gitbook.io/)
 ```shell
 ## 仅参考
@@ -52,3 +48,6 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 
 ## network
 [http网络排错](https://www.cnblogs.com/hujuntao/p/11984700.html)
+- 碰到的一些报错
+  - wget报错 `Unable to establish SSL connection` 对应增加参数`--no-check-certificate`解决
+  - curl报错 `curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.` 对应增加参数`--insecure`
