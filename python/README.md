@@ -29,3 +29,8 @@ mkdir /root/venv
 python -m venv /root/venv/test
 source /root/venv/test/bin/activate
 ```
+
+## editor
+
+### vscode
+* [vscode白话](https://segmentfault.com/a/1190000017949680)
