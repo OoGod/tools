@@ -5,6 +5,7 @@
 ## file browser
 * [filebrowser中文](https://www.filebrowser.cn/)
 * [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser)
+* [filebrowser白话](https://www.zatp.com/post/install-file-browser-tool/)
 
 - 测试环境：centos7.6
 - 安装版本：[v2.21.1/linux-amd64-filebrowser.tar.gz](https://github.com/filebrowser/filebrowser/releases/download/v2.21.1/linux-amd64-filebrowser.tar.gz)
