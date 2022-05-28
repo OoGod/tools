@@ -3,7 +3,7 @@
 
 
 ## file browser
-* [file browser白话](https://www.ithome.com/0/395/740.htm)
+* [filebrowser中文](https://www.filebrowser.cn/)
 * [filebrowser/filebrowser](https://github.com/filebrowser/filebrowser)
 
 - 测试环境：centos7.6
