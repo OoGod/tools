@@ -11,9 +11,9 @@
   - 更多版本见[filebrowser_release](https://github.com/filebrowser/filebrowser/releases)
 - 操作步骤 [installation](https://filebrowser.org/installation)
 ```shell
-if [ ! -d /root/share/filebrower ]; then
-    mkdir -p /root/share/filebrower
+if [ ! -d /home/share/filebrower ]; then
+    mkdir -p /home/share/filebrower
 fi
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
-filebrowser -r /path/to/your/files
+filebrowser -r /home/share/filebrower
 ```
