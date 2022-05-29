@@ -18,3 +18,9 @@ fi
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 filebrowser -r /home/share/filebrower
 ```
+
+### rsync
+* [rsync白话](http://www.bjpowernode.com/hot/888.html)
+```shell
+rsync -zvrh remoting.jar /root/work/
+```
