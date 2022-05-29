@@ -1,5 +1,6 @@
 ## ftp
 * [ftp白话](https://help.aliyun.com/document_detail/60152.html)
+* [ftp用户配置](https://blog.csdn.net/soslinken/article/details/79304076)
 
 
 ## file browser
