@@ -18,6 +18,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 * [python打包](https://www.jianshu.com/p/d4209d77c3b1)
 * [poetry简单使用](http://t.zoukankan.com/zepc007-p-12054815.html)
 
+### PDM
+* [PDM白话](https://zhuanlan.zhihu.com/p/468445226)
+
 ```shell
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 source $HOME/.poetry/env
