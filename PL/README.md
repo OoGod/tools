@@ -40,6 +40,8 @@ source /root/venv/test/bin/activate
 
 ### emcas
 * [emcas白话](https://liujiacai.net/blog/2020/11/25/why-emacs/)
+* [emcas安装卸载白话](https://www.cnblogs.com/snake553/p/4943816.html)
+* [emcas下载](https://mirror.bjtu.edu.cn/gnu/emacs/)
 
 ```shell
 sudo yum -y groupinstall "Development Tools"
@@ -52,9 +54,20 @@ sudo yum -y install gpm-devel dbus-devel dbus-glib-devel dbus-python
 sudo yum -y install GConf2-devel pkgconfig
 
 wget http://ftp.gnu.org/pub/gnu/emacs/emacs-24.4.tar.gz
+#wget https://mirror.bjtu.edu.cn/gnu/emacs/emacs-28.1.tar.gz
+
 sudo tar xvf emacs-24.4.tar.gz
 
 cd emacs-24.4
 sudo ./configure -prefix=/usr/local -with-x-toolkit=gtk
+#sudo ./configure -prefix=/usr/local -with-x-toolkit=gtk --with-gnutls=ifavailable
 sudo make && make install
+```
+
+```shell
+## uninstall
+cd emacs-24.4 
+sudo ./configure --prefix=/usr/local --with-x-toolkit=gtk --without-gsettings
+sudo make
+sudo make uninstall
 ```
