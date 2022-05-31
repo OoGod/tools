@@ -37,3 +37,6 @@ source /root/venv/test/bin/activate
 
 ### vscode
 * [vscode白话](https://segmentfault.com/a/1190000017949680)
+
+### emcas
+* [emcas白话](https://liujiacai.net/blog/2020/11/25/why-emacs/)
