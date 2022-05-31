@@ -40,3 +40,21 @@ source /root/venv/test/bin/activate
 
 ### emcas
 * [emcas白话](https://liujiacai.net/blog/2020/11/25/why-emacs/)
+
+```shell
+sudo yum -y groupinstall "Development Tools"
+sudo yum -y install gtk+-devel gtk2-devel
+sudo yum -y install libXpm-devel
+sudo yum -y install giflib-devel
+sudo yum -y install libtiff-devel libjpeg-devel
+sudo yum -y install ncurses-devel
+sudo yum -y install gpm-devel dbus-devel dbus-glib-devel dbus-python
+sudo yum -y install GConf2-devel pkgconfig
+
+wget http://ftp.gnu.org/pub/gnu/emacs/emacs-24.4.tar.gz
+sudo tar xvf emacs-24.4.tar.gz
+
+cd emacs-24.4
+sudo ./configure -prefix=/usr/local -with-x-toolkit=gtk
+sudo make && make install
+```
