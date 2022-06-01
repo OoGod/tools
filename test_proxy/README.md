@@ -63,7 +63,7 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 - 方法一: git config
   - 全局: git config --global http.proxy 127.0.0.1:9090
   - 本地: git config --local http.proxy 127.0.0.1:9090
-- 方法二
+- 方法二 [git设置代理](https://wenku.baidu.com/view/0b4c153cfc00bed5b9f3f90f76c66137ee064fec.html)
 ```shell
 cat >> ~/.ssh/config  <<EOF
 ## github
@@ -71,8 +71,6 @@ Host github.com
     HostName github.com
     identityFile ~/.ssh/id_rsa_github
     ProxyCommand nc -v -x 127.0.0.1:9090 %h %p
+    # ProxyCommand connect -S 127.0.0.1:9090 %h %p # for windows
 EOF
 ```
-- 方法二: git config
-  - 全局: git config --global http.proxy 127.0.0.1:9090
-  - 本地: git config --local http.proxy 127.0.0.1:9090
