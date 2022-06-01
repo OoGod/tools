@@ -58,3 +58,21 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 
 ### wget
 - wget url -e http_proxy=http://ip:port
+
+### git
+- 方法一: git config
+  - 全局: git config --global http.proxy 127.0.0.1:9090
+  - 本地: git config --local http.proxy 127.0.0.1:9090
+- 方法二
+```shell
+cat >> ~/.ssh/config  <<EOF
+## github
+Host github.com
+    HostName github.com
+    identityFile ~/.ssh/id_rsa_github
+    ProxyCommand nc -v -x 127.0.0.1:9090 %h %p
+EOF
+```
+- 方法二: git config
+  - 全局: git config --global http.proxy 127.0.0.1:9090
+  - 本地: git config --local http.proxy 127.0.0.1:9090
