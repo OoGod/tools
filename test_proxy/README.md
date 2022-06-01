@@ -55,3 +55,6 @@ curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 - curl报错 `curl: (35) Encountered end of file` 
   - 查看443端口状态`firewall-cmd --zone=public --query-port=443/tcp`, yes表示开启,若未开启执行`irewall-cmd --zone=public --add-port=443/tcp`开启
   - 若已开启, 仍有报错，可能网络问题，多试几次;
+
+### wget
+- wget url -e http_proxy=http://ip:port
