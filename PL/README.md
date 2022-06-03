@@ -42,6 +42,7 @@ source /root/venv/test/bin/activate
 * [emcas白话](https://liujiacai.net/blog/2020/11/25/why-emacs/)
 * [emcas安装卸载白话](https://www.cnblogs.com/snake553/p/4943816.html)
 * [emcas下载](https://mirror.bjtu.edu.cn/gnu/emacs/)
+* [emacs用法](https://book.emacs-china.org/)
 
 ```shell
 sudo yum -y groupinstall "Development Tools"
