@@ -60,3 +60,7 @@ make configure
 make all doc info
 sudo make install install-doc install-html install-info
 ```
+
+## tg
+* [安装tg白话](http://t.zoukankan.com/braless-p-14311802.html)
+* [安装tg-centos](https://www.91yun.co/archives/5691)
