@@ -64,6 +64,7 @@ sudo make install install-doc install-html install-info
 ## tg
 * [安装tg白话](http://t.zoukankan.com/braless-p-14311802.html)
 * [安装tg-centos](https://www.91yun.co/archives/5691)
+* [docker-tg安装](https://haoduck.com/677.html)
 
 ## docker
 * [docker安装白话](https://yeasy.gitbook.io/docker_practice/install/centos)
