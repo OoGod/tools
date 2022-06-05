@@ -64,3 +64,28 @@ sudo make install install-doc install-html install-info
 ## tg
 * [安装tg白话](http://t.zoukankan.com/braless-p-14311802.html)
 * [安装tg-centos](https://www.91yun.co/archives/5691)
+
+## docker
+* [docker安装白话](https://yeasy.gitbook.io/docker_practice/install/centos)
+
+```shell
+sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+sudo yum-config-manager \
+    --add-repo \
+    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+sudo sed -i 's/download.docker.com/mirrors.aliyun.com\/docker-ce/g' /etc/yum.repos.d/docker-ce.repo
+# 安装
+sudo yum install docker-ce docker-ce-cli containerd.io
+# 启动
+sudo systemctl enable docker
+sudo systemctl start docker
+```
