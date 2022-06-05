@@ -44,6 +44,7 @@ source /root/venv/test/bin/activate
 * [emcas下载](https://mirror.bjtu.edu.cn/gnu/emacs/)
 * [emacs用法](https://book.emacs-china.org/)
 * [elisp运行过程](https://kangxiaoning.github.io/post/2021/02/learn-emacs-lisp-part-1/)
+* [elisp中文手册](https://emacs-china.org/t/elisp28-1-1-0/21185/5)
 
 ```shell
 sudo yum -y groupinstall "Development Tools"
