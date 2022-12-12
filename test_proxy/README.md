@@ -26,8 +26,8 @@ cd ~
 wget https://clash_url -O ~/.config/clash/config.yaml
 # 后台运行
 ./clash &
-export http_proxy=127.0.0.1:7890
-export http_proxys=127.0.0.1:7890
+export http_proxy=http://127.0.0.1:7890
+export https_proxy=http://127.0.0.1:7890
 ```
 - 登录[远程管理界面](http://clash.razord.top/)修改配置
   - Host: ip地址
@@ -42,9 +42,15 @@ selector=`echo -n "$selector"| xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
 curl -v -X PUT 127.0.0.1:9090/proxies/${selector} -d '{"name":'$name'}'
 ```
 
+- 配置[clash web管理界面](https://github.com/Dreamacro/clash-dashboard)
+```shell
+pnpm install
+pnpm start --host=0.0.0.0 --port=8080
+```
 * [centos使用clash](https://i.jakeyu.top/2021/11/27/centos-%E4%BD%BF%E7%94%A8-Clash-%E6%A2%AF%E5%AD%90/)
 * [clash_premium](https://github.com/Dreamacro/clash/releases/tag/premium)
 * [clash配置开机启动](https://einverne.github.io/post/2021/03/linux-use-clash.html)
+* [Debian 部署 Clash Web 管理页-仅参考](https://www.modb.pro/db/399645)
 
 
 ## network
@@ -74,3 +80,6 @@ Host github.com
     # ProxyCommand connect -S 127.0.0.1:9090 %h %p # for windows
 EOF
 ```
+
+### github
+* [github无法访问的问题] (https://www.cnblogs.com/wanpi/p/14668174.html)
